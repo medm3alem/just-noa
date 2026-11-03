@@ -1,0 +1,108 @@
+{
+  "title": "Sync calibration (90 BPM)",
+  "description": "NAO's right arm hits on every click: film it to measure the audio/motion offset.",
+  "audio": "click.wav",
+  "audio_robot": "/home/nao/music/click.wav",
+  "audio_start": 0.0,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "end": 13.67,
+  "events": [
+    {
+      "t": 2.0,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.05
+    },
+    {
+      "t": 2.6667,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 3.3333,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 4.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 4.6667,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.05
+    },
+    {
+      "t": 5.3333,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 6.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 6.6667,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 7.3333,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.05
+    },
+    {
+      "t": 8.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 8.6667,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 9.3333,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 10.0,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.05
+    },
+    {
+      "t": 10.6667,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 11.3333,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    },
+    {
+      "t": 12.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.05
+    }
+  ]
+}

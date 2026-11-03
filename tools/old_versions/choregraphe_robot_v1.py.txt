@@ -1,0 +1,148 @@
+# -*- coding: utf-8 -*-
+"""Backend du robot virtuel Choregraphe (passerelle locale JSON/TCP)."""
+from __future__ import absolute_import, print_function
+import json
+import socket
+import threading
+import os
+import time
+import wave
+from robot.base import Robot, RobotError
+from robot.fake_robot import NAO_LIMITS
+try:
+    import winsound
+except ImportError:
+    winsound = None
+
+class ChoregrapheRobot(Robot):
+    name = 'choregraphe'
+
+    def __init__(self, log=None, host='127.0.0.1', port=8765):
+        Robot.__init__(self, log)
+        self.host, self.port = host, port
+        self._awake = False
+        self._posture = 'Crouch'
+        self._fall_callback = None
+        self._audio_stop = threading.Event()
+        self._speech_stop = threading.Event()
+        self._audio_lock = threading.Lock()
+        self._connected = False
+
+    def _request(self, command, timeout=15, **params):
+        request = dict(params, cmd=command)
+        payload = (json.dumps(request, ensure_ascii=True, separators=(',', ':')) + '\n').encode('ascii')
+        try:
+            s = socket.create_connection((self.host, self.port), 3)
+            try:
+                s.settimeout(timeout)
+                s.sendall(payload)
+                data = bytearray()
+                while b'\n' not in data:
+                    chunk = s.recv(4096)
+                    if not chunk:
+                        raise RobotError('Passerelle fermee sans reponse (%s)' % command)
+                    data.extend(chunk)
+                    if len(data) > 1024 * 1024:
+                        raise RobotError('Reponse trop volumineuse')
+                result = json.loads(bytes(data).split(b'\n', 1)[0].decode('utf-8'))
+            finally:
+                s.close()
+        except (socket.error, ValueError) as exc:
+            raise RobotError('Passerelle Choregraphe (%s): %s' % (command, exc))
+        if not result.get('ok'):
+            raise RobotError('Choregraphe (%s): %s' % (command, result.get('error', 'erreur inconnue')))
+        return result.get('result')
+
+    def connect(self):
+        self._request('ping', timeout=5)
+        self._connected = True
+        st = self._request('status')
+        self._awake = bool(st.get('awake'))
+        self._posture = st.get('posture') or 'Crouch'
+        self.log('[OK] Passerelle Choregraphe connectee sur %s:%d' % (self.host, self.port))
+
+    def close(self):
+        self._connected = False
+
+    def wake_up(self):
+        self._request('wake', timeout=35)
+        self._awake = True
+
+    def rest(self):
+        self._request('rest', timeout=35)
+        self._awake = False
+        self._posture = 'Crouch'
+
+    def go_to_posture(self, posture, speed):
+        self._request('posture', posture=posture, speed=speed, timeout=35)
+        self._posture = posture
+        self._awake = True
+
+    def is_awake(self):
+        return bool(self._request('status', timeout=5).get('awake'))
+
+    def joint_limits(self, names):
+        return dict((n, NAO_LIMITS.get(n)) for n in names)
+
+    def move_to(self, names, angles, duration):
+        self._request('move', names=names, angles=angles, duration=duration,
+                      timeout=max(15, duration + 15))
+
+    def play_motion(self, names, times, keys):
+        duration = max([t[-1] for t in times if t] or [0])
+        self._request('play', names=names, times=times, keys=keys,
+                      timeout=max(15, duration + 20))
+
+    def stop_motion(self, names):
+        self._request('stop', names=names, timeout=5)
+
+    def prepare_audio(self, local_path):
+        if not os.path.isfile(local_path):
+            raise RobotError('Fichier audio introuvable : %s' % local_path)
+        if winsound is None or not local_path.lower().endswith('.wav'):
+            self.log('[ATTENTION] Audio PC : seul WAV est pris en charge dans ce mode')
+            return None
+        with wave.open(local_path, 'rb') as w:
+            duration = w.getnframes() / float(w.getframerate())
+        return {'path': local_path, 'duration': duration}
+
+    def play_audio(self, handle):
+        if handle is None:
+            return
+        self._audio_stop.clear()
+        with self._audio_lock:
+            winsound.PlaySound(handle['path'], winsound.SND_FILENAME | winsound.SND_ASYNC)
+            self._audio_stop.wait(handle['duration'])
+            winsound.PlaySound(None, 0)
+
+    def stop_audio(self, handle):
+        self._audio_stop.set()
+        if winsound is not None:
+            winsound.PlaySound(None, 0)
+
+    def release_audio(self, handle):
+        pass
+
+    def say(self, text):
+        self._request('say', text=text, timeout=max(15, len(text) / 8.0 + 10))
+
+    def stop_speech(self):
+        self._request('stop_speech', timeout=5)
+
+    def set_leds(self, rgb, duration):
+        self._request('leds', rgb=rgb, duration=duration, timeout=5)
+
+    def status(self):
+        try:
+            st = self._request('status', timeout=5)
+            return dict(connected=True, robot='NAO virtuel Choregraphe',
+                        backend='choregraphe-tcp', battery=None,
+                        posture=st.get('posture'), awake=st.get('awake'),
+                        temperature=None)
+        except Exception:
+            return dict(connected=False, robot='NAO virtuel Choregraphe',
+                        backend='choregraphe-tcp', battery=None,
+                        posture=None, awake=None, temperature=None)
+
+    def on_fall(self, callback):
+        self._fall_callback = callback

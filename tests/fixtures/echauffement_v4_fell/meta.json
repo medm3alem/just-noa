@@ -1,0 +1,102 @@
+{
+  "title": "Warm-up (arms)",
+  "description": "Easy arm moves, slow then faster: arms out, forward, up, one arm at a time, elbow curls.",
+  "difficulty": "easy",
+  "audio": null,
+  "sync_offset": 0.0,
+  "countdown": true,
+  "end": 29.59,
+  "events": [
+    {
+      "type": "say",
+      "text": "Arms out!",
+      "t": 0.8
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 1.652
+    },
+    {
+      "type": "say",
+      "text": "Arms forward!",
+      "t": 6.017
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 6.87
+    },
+    {
+      "type": "say",
+      "text": "Reach up!",
+      "t": 11.235
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 12.087
+    },
+    {
+      "type": "say",
+      "text": "One arm at a time!",
+      "t": 16.452
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 17.304
+    },
+    {
+      "type": "say",
+      "text": "Bend your elbows!",
+      "t": 21.67
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 22.522
+    },
+    {
+      "type": "say",
+      "text": "Great warm-up!",
+      "t": 28.391
+    }
+  ],
+  "composer": {
+    "bpm": 92.0,
+    "first_beat": 1.0
+  },
+  "moves": [
+    {
+      "start": 1.652,
+      "end": 6.87,
+      "name": "Arms out to the sides"
+    },
+    {
+      "start": 6.87,
+      "end": 12.087,
+      "name": "Arms forward"
+    },
+    {
+      "start": 12.087,
+      "end": 17.304,
+      "name": "Arms up"
+    },
+    {
+      "start": 17.304,
+      "end": 22.522,
+      "name": "One arm, then the other"
+    },
+    {
+      "start": 22.522,
+      "end": 27.739,
+      "name": "Elbow curls"
+    }
+  ]
+}

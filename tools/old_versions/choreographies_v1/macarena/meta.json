@@ -1,0 +1,59 @@
+{
+  "title": "Macarena",
+  "description": "Upper-body Macarena: the 16 classic moves adapted to NAO, on the 0:48-1:54 excerpt of the Bayside Boys Remix (103 BPM).",
+  "difficulty": "easy",
+  "audio": "macarena_extrait.wav",
+  "audio_robot": "/home/nao/music/macarena_extrait.wav",
+  "audio_start": 0.0,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "end": 66.0,
+  "scoring": {
+    "start": 1.0,
+    "end": 65.8
+  },
+  "events": [
+    {
+      "t": 0.35,
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15
+    },
+    {
+      "t": 9.67,
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15
+    },
+    {
+      "t": 18.991,
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15
+    },
+    {
+      "t": 28.311,
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15
+    },
+    {
+      "t": 37.632,
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15
+    },
+    {
+      "t": 46.952,
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15
+    },
+    {
+      "t": 56.272,
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15
+    }
+  ]
+}

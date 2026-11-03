@@ -1,0 +1,21 @@
+# Just Nao - dépendances du jeu interactif (Python 3.9 à 3.13, Windows 64 bits)
+#
+# Installation, depuis le dossier du projet :
+#   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#   .\.venv\Scripts\python.exe tools\download_model.py
+#
+# MediaPipe installe aussi numpy et OpenCV (paquet opencv-contrib-python, qui
+# fournit cv2). Ne pas installer en plus opencv-python : deux paquets OpenCV
+# dans le même environnement se marchent dessus (voir docs/CAMERA.md).
+#
+# Versions vérifiées (tests automatisés) : MediaPipe 1.2.0 et 0.10.32 (API Tasks),
+# OpenCV 5.0, numpy 2.x, Pillow 12-13, Python 3.11 à 3.13.
+mediapipe>=0.10.30
+Pillow>=10.0
+#
+# Rien d'autre : Tkinter est fourni avec Python sous Windows.
+# Le SDK NAOqi (Python 2.7) n'est utile que pour le mode robot direct --ip.
+#
+# Outils de développement facultatifs (pas nécessaires pour jouer) :
+#   tools/render_dance.py (images des poses)  : pip install matplotlib
+#   tools/analyze_audio.py (tempo, temps)     : numpy, déjà installé avec MediaPipe

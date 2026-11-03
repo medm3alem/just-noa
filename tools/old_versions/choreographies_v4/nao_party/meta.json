@@ -1,0 +1,192 @@
+{
+  "title": "NAO Party",
+  "description": "Waves, punches, disco and a big finish at 112 BPM, with NAO's voice and eye LEDs (no music).",
+  "audio": null,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "end": 41.59,
+  "events": [
+    {
+      "type": "say",
+      "text": "Hey everybody!",
+      "t": 0.0
+    },
+    {
+      "type": "say",
+      "text": "Are you ready to party?",
+      "t": 1.6
+    },
+    {
+      "type": "say",
+      "text": "Let's go!",
+      "t": 3.2
+    },
+    {
+      "type": "say",
+      "text": "Wave your hands!",
+      "t": 4.536
+    },
+    {
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.1,
+      "t": 5.136
+    },
+    {
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.1,
+      "t": 7.279
+    },
+    {
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.1,
+      "t": 9.421
+    },
+    {
+      "type": "leds",
+      "color": "#FFFF00",
+      "duration": 0.1,
+      "t": 11.564
+    },
+    {
+      "type": "say",
+      "text": "Punch! Punch!",
+      "t": 13.107
+    },
+    {
+      "type": "leds",
+      "color": "#FF00FF",
+      "duration": 0.1,
+      "t": 13.707
+    },
+    {
+      "type": "leds",
+      "color": "#00FFFF",
+      "duration": 0.1,
+      "t": 15.85
+    },
+    {
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.1,
+      "t": 17.993
+    },
+    {
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.1,
+      "t": 20.136
+    },
+    {
+      "type": "say",
+      "text": "Disco time!",
+      "t": 21.679
+    },
+    {
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.1,
+      "t": 22.279
+    },
+    {
+      "type": "leds",
+      "color": "#FFFF00",
+      "duration": 0.1,
+      "t": 24.421
+    },
+    {
+      "type": "leds",
+      "color": "#FF00FF",
+      "duration": 0.1,
+      "t": 26.564
+    },
+    {
+      "type": "leds",
+      "color": "#00FFFF",
+      "duration": 0.1,
+      "t": 28.707
+    },
+    {
+      "type": "say",
+      "text": "Big finish!",
+      "t": 30.25
+    },
+    {
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.1,
+      "t": 30.85
+    },
+    {
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.1,
+      "t": 32.993
+    },
+    {
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.1,
+      "t": 35.136
+    },
+    {
+      "type": "leds",
+      "color": "#FFFF00",
+      "duration": 0.1,
+      "t": 37.279
+    },
+    {
+      "type": "say",
+      "text": "Thank you!",
+      "t": 40.286
+    }
+  ],
+  "composer": {
+    "bpm": 112.0,
+    "first_beat": 4.6
+  },
+  "moves": [
+    {
+      "start": 5.136,
+      "end": 9.421,
+      "name": "Wave"
+    },
+    {
+      "start": 9.421,
+      "end": 13.707,
+      "name": "Wave with both hands"
+    },
+    {
+      "start": 13.707,
+      "end": 20.136,
+      "name": "Punches"
+    },
+    {
+      "start": 20.136,
+      "end": 22.279,
+      "name": "Arms out"
+    },
+    {
+      "start": 22.279,
+      "end": 26.564,
+      "name": "Disco"
+    },
+    {
+      "start": 26.564,
+      "end": 30.85,
+      "name": "Disco"
+    },
+    {
+      "start": 30.85,
+      "end": 35.136,
+      "name": "Curls and arms out"
+    },
+    {
+      "start": 35.136,
+      "end": 39.421,
+      "name": "Big finish"
+    }
+  ]
+}

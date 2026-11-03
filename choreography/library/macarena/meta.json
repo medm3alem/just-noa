@@ -1,0 +1,399 @@
+{
+  "title": "Macarena",
+  "description": "Upper-body Macarena on the beat (103 BPM): arms out, palms up, shoulders, head, hips, elbows and \"Ay!\", 7 times with variations.",
+  "difficulty": "easy",
+  "audio": "macarena_extrait.wav",
+  "audio_robot": "/home/nao/music/macarena_extrait.wav",
+  "audio_start": 0.0,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "end": 65.98,
+  "scoring": {
+    "start": 0.82,
+    "end": 65.93
+  },
+  "events": [
+    {
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15,
+      "t": 0.816
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 9.541
+    },
+    {
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15,
+      "t": 10.123
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 18.848
+    },
+    {
+      "type": "say",
+      "text": "Come on, my grandma has more rhythm!",
+      "t": 19.23
+    },
+    {
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15,
+      "t": 19.43
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 28.155
+    },
+    {
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15,
+      "t": 28.736
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 37.461
+    },
+    {
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15,
+      "t": 38.043
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 46.768
+    },
+    {
+      "type": "say",
+      "text": "Are you dancing, or buffering?",
+      "t": 47.15
+    },
+    {
+      "type": "leds",
+      "color": "#FF55AA",
+      "duration": 0.15,
+      "t": 47.35
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 56.075
+    },
+    {
+      "type": "leds",
+      "color": "#00BFFF",
+      "duration": 0.15,
+      "t": 56.656
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.2,
+      "t": 65.381
+    }
+  ],
+  "composer": {
+    "bpm": 103.15,
+    "first_beat": 0.2348,
+    "cycles": 7,
+    "beats_file": "beats.json"
+  },
+  "moves": [
+    {
+      "start": 0.816,
+      "end": 1.98,
+      "name": "Right arm out"
+    },
+    {
+      "start": 1.98,
+      "end": 3.143,
+      "name": "Palms up"
+    },
+    {
+      "start": 3.143,
+      "end": 4.306,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 4.306,
+      "end": 5.47,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 5.47,
+      "end": 6.633,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 6.633,
+      "end": 7.796,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 7.796,
+      "end": 8.96,
+      "name": "Wiggle"
+    },
+    {
+      "start": 8.96,
+      "end": 10.123,
+      "name": "Ay!"
+    },
+    {
+      "start": 10.123,
+      "end": 11.286,
+      "name": "Right arm out"
+    },
+    {
+      "start": 11.286,
+      "end": 12.45,
+      "name": "Palms up"
+    },
+    {
+      "start": 12.45,
+      "end": 13.613,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 13.613,
+      "end": 14.776,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 14.776,
+      "end": 15.94,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 15.94,
+      "end": 17.103,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 17.103,
+      "end": 18.266,
+      "name": "Wiggle"
+    },
+    {
+      "start": 18.266,
+      "end": 19.43,
+      "name": "Ay!"
+    },
+    {
+      "start": 19.43,
+      "end": 20.593,
+      "name": "Right arm out"
+    },
+    {
+      "start": 20.593,
+      "end": 21.756,
+      "name": "Palms up"
+    },
+    {
+      "start": 21.756,
+      "end": 22.92,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 22.92,
+      "end": 24.083,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 24.083,
+      "end": 25.246,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 25.246,
+      "end": 26.41,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 26.41,
+      "end": 27.573,
+      "name": "Wiggle"
+    },
+    {
+      "start": 27.573,
+      "end": 28.736,
+      "name": "Ay!"
+    },
+    {
+      "start": 28.736,
+      "end": 29.9,
+      "name": "Right arm out"
+    },
+    {
+      "start": 29.9,
+      "end": 31.063,
+      "name": "Palms up"
+    },
+    {
+      "start": 31.063,
+      "end": 32.226,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 32.226,
+      "end": 33.39,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 33.39,
+      "end": 34.553,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 34.553,
+      "end": 35.716,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 35.716,
+      "end": 36.88,
+      "name": "Wiggle"
+    },
+    {
+      "start": 36.88,
+      "end": 38.043,
+      "name": "Ay!"
+    },
+    {
+      "start": 38.043,
+      "end": 39.206,
+      "name": "Right arm out"
+    },
+    {
+      "start": 39.206,
+      "end": 40.37,
+      "name": "Palms up"
+    },
+    {
+      "start": 40.37,
+      "end": 41.533,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 41.533,
+      "end": 42.696,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 42.696,
+      "end": 43.86,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 43.86,
+      "end": 45.023,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 45.023,
+      "end": 46.186,
+      "name": "Wiggle"
+    },
+    {
+      "start": 46.186,
+      "end": 47.35,
+      "name": "Ay!"
+    },
+    {
+      "start": 47.35,
+      "end": 48.513,
+      "name": "Right arm out"
+    },
+    {
+      "start": 48.513,
+      "end": 49.676,
+      "name": "Palms up"
+    },
+    {
+      "start": 49.676,
+      "end": 50.84,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 50.84,
+      "end": 52.003,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 52.003,
+      "end": 53.166,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 53.166,
+      "end": 54.33,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 54.33,
+      "end": 55.493,
+      "name": "Wiggle"
+    },
+    {
+      "start": 55.493,
+      "end": 56.656,
+      "name": "Ay!"
+    },
+    {
+      "start": 56.656,
+      "end": 57.82,
+      "name": "Right arm out"
+    },
+    {
+      "start": 57.82,
+      "end": 58.983,
+      "name": "Palms up"
+    },
+    {
+      "start": 58.983,
+      "end": 60.146,
+      "name": "Hands to shoulders"
+    },
+    {
+      "start": 60.146,
+      "end": 61.31,
+      "name": "Hands behind head"
+    },
+    {
+      "start": 61.31,
+      "end": 62.473,
+      "name": "Hands on hips"
+    },
+    {
+      "start": 62.473,
+      "end": 63.636,
+      "name": "Hands behind hips"
+    },
+    {
+      "start": 63.636,
+      "end": 64.8,
+      "name": "Wiggle"
+    },
+    {
+      "start": 64.8,
+      "end": 65.963,
+      "name": "Ay!"
+    }
+  ]
+}

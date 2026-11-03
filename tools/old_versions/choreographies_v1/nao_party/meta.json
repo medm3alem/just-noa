@@ -1,0 +1,173 @@
+{
+  "title": "NAO Party",
+  "description": "The team's first test (Choregraphe box): head and arms, lyrics and LEDs, no music.",
+  "audio": null,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "end": 41.5,
+  "events": [
+    {
+      "t": 0.0,
+      "type": "say",
+      "text": "Hey everybody!"
+    },
+    {
+      "t": 1.6,
+      "type": "say",
+      "text": "Are you ready to dance?"
+    },
+    {
+      "t": 3.4,
+      "type": "say",
+      "text": "Three! Two! One! Let's go!"
+    },
+    {
+      "t": 6.0,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.1
+    },
+    {
+      "t": 6.0,
+      "type": "say",
+      "text": "I am NAO, I love to dance!"
+    },
+    {
+      "t": 8.5,
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.1
+    },
+    {
+      "t": 8.5,
+      "type": "say",
+      "text": "Move your body, take a chance!"
+    },
+    {
+      "t": 11.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.1
+    },
+    {
+      "t": 11.0,
+      "type": "say",
+      "text": "Left and right, here we go!"
+    },
+    {
+      "t": 13.5,
+      "type": "leds",
+      "color": "#FF00FF",
+      "duration": 0.1
+    },
+    {
+      "t": 13.5,
+      "type": "say",
+      "text": "Everybody dance with NAO!"
+    },
+    {
+      "t": 16.0,
+      "type": "leds",
+      "color": "#00FFFF",
+      "duration": 0.1
+    },
+    {
+      "t": 16.0,
+      "type": "say",
+      "text": "I am NAO, I love to dance!"
+    },
+    {
+      "t": 18.5,
+      "type": "leds",
+      "color": "#FFFF00",
+      "duration": 0.1
+    },
+    {
+      "t": 18.5,
+      "type": "say",
+      "text": "Move your body, take a chance!"
+    },
+    {
+      "t": 21.0,
+      "type": "leds",
+      "color": "#FF0000",
+      "duration": 0.1
+    },
+    {
+      "t": 21.0,
+      "type": "say",
+      "text": "Left and right, here we go!"
+    },
+    {
+      "t": 23.5,
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.1
+    },
+    {
+      "t": 23.5,
+      "type": "say",
+      "text": "Everybody dance with NAO!"
+    },
+    {
+      "t": 26.0,
+      "type": "leds",
+      "color": "#0000FF",
+      "duration": 0.1
+    },
+    {
+      "t": 26.0,
+      "type": "say",
+      "text": "I am NAO, I love to dance!"
+    },
+    {
+      "t": 28.5,
+      "type": "leds",
+      "color": "#FF00FF",
+      "duration": 0.1
+    },
+    {
+      "t": 28.5,
+      "type": "say",
+      "text": "Move your body, take a chance!"
+    },
+    {
+      "t": 31.0,
+      "type": "leds",
+      "color": "#00FFFF",
+      "duration": 0.1
+    },
+    {
+      "t": 31.0,
+      "type": "say",
+      "text": "Left and right, here we go!"
+    },
+    {
+      "t": 33.5,
+      "type": "leds",
+      "color": "#FFFF00",
+      "duration": 0.1
+    },
+    {
+      "t": 33.5,
+      "type": "say",
+      "text": "Everybody dance with NAO!"
+    },
+    {
+      "t": 36.0,
+      "type": "say",
+      "text": "Oh yeah! NAO is the king of dance!"
+    },
+    {
+      "t": 36.0,
+      "type": "leds",
+      "color": "#00FF00",
+      "duration": 0.3
+    },
+    {
+      "t": 39.0,
+      "type": "say",
+      "text": "Thank you everybody!"
+    }
+  ]
+}

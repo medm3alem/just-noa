@@ -1,0 +1,156 @@
+{
+  "title": "Mekassarat (Ahmed Saad)",
+  "audio": "mekassarat_extrait.wav",
+  "audio_robot": "/home/nao/music/mekassarat_extrait.wav",
+  "audio_start": 0.0,
+  "sync_offset": 0.0,
+  "countdown": false,
+  "description": "Egyptian pop at 110 BPM: hand twirls, wings, pointing to the sky, snake arms, waves and disco, with a big finish.",
+  "difficulty": "medium",
+  "end": 48.45,
+  "scoring": {
+    "start": 1.16,
+    "end": 48.37
+  },
+  "composer": {
+    "bpm": 109.98,
+    "first_beat": 0.0639,
+    "beats_file": "beats.json",
+    "source": "Ahmed Saad - Mekassarat, 0:17.55 -> 1:06.00"
+  },
+  "events": [
+    {
+      "type": "leds",
+      "color": "#FF8C00",
+      "duration": 0.15,
+      "t": 0.064
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.15,
+      "t": 8.792
+    },
+    {
+      "type": "say",
+      "text": "Yalla! Show me your moves!",
+      "t": 17.121
+    },
+    {
+      "type": "leds",
+      "color": "#FF2D55",
+      "duration": 0.15,
+      "t": 17.521
+    },
+    {
+      "type": "leds",
+      "color": "#00E5FF",
+      "duration": 0.15,
+      "t": 26.25
+    },
+    {
+      "type": "say",
+      "text": "Even my circuits are dancing!",
+      "t": 34.578
+    },
+    {
+      "type": "leds",
+      "color": "#B000FF",
+      "duration": 0.15,
+      "t": 34.978
+    },
+    {
+      "type": "leds",
+      "color": "#00FF66",
+      "duration": 0.15,
+      "t": 43.706
+    },
+    {
+      "type": "leds",
+      "color": "#FFFFFF",
+      "duration": 0.08,
+      "t": 43.706
+    },
+    {
+      "type": "leds",
+      "color": "#FFFFFF",
+      "duration": 0.08,
+      "t": 44.798
+    },
+    {
+      "type": "leds",
+      "color": "#FFFFFF",
+      "duration": 0.08,
+      "t": 45.889
+    },
+    {
+      "type": "leds",
+      "color": "#FFFFFF",
+      "duration": 0.08,
+      "t": 46.98
+    },
+    {
+      "type": "leds",
+      "color": "#FFD400",
+      "duration": 0.3,
+      "t": 48.071
+    }
+  ],
+  "moves": [
+    {
+      "start": 0.064,
+      "end": 4.428,
+      "name": "Hand twirls"
+    },
+    {
+      "start": 4.428,
+      "end": 8.792,
+      "name": "Hand twirls up high"
+    },
+    {
+      "start": 8.792,
+      "end": 13.157,
+      "name": "Wings"
+    },
+    {
+      "start": 13.157,
+      "end": 17.521,
+      "name": "Point to the sky"
+    },
+    {
+      "start": 17.521,
+      "end": 21.885,
+      "name": "Snake arms"
+    },
+    {
+      "start": 21.885,
+      "end": 26.25,
+      "name": "Snake arms"
+    },
+    {
+      "start": 26.25,
+      "end": 30.614,
+      "name": "Wave up high"
+    },
+    {
+      "start": 30.614,
+      "end": 34.978,
+      "name": "Wave with the other hand"
+    },
+    {
+      "start": 34.978,
+      "end": 39.342,
+      "name": "Disco"
+    },
+    {
+      "start": 39.342,
+      "end": 43.706,
+      "name": "Disco"
+    },
+    {
+      "start": 43.706,
+      "end": 48.071,
+      "name": "Big finish"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "title": "Warm-up (arms)",
+  "description": "Moderate visible alternating arm lifts, elbow bends and gentle openings; no overhead reaches.",
+  "difficulty": "easy",
+  "audio": null,
+  "sync_offset": 0.0,
+  "countdown": true,
+  "end": 29.59,
+  "events": [
+    {
+      "type": "say",
+      "text": "Lift your right arm, nice and slow.",
+      "t": 0.8
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 1.652
+    },
+    {
+      "type": "say",
+      "text": "Now your left arm, take your time.",
+      "t": 6.017
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 6.87
+    },
+    {
+      "type": "say",
+      "text": "Bend one elbow, then relax.",
+      "t": 11.235
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 12.087
+    },
+    {
+      "type": "say",
+      "text": "Easy there, I am not a helicopter!",
+      "t": 14.696
+    },
+    {
+      "type": "say",
+      "text": "Open your right arm, slowly.",
+      "t": 16.452
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 17.304
+    },
+    {
+      "type": "say",
+      "text": "One last easy elbow bend.",
+      "t": 21.67
+    },
+    {
+      "type": "leds",
+      "color": "#00A0FF",
+      "duration": 0.1,
+      "t": 22.522
+    },
+    {
+      "type": "say",
+      "text": "Looking good! My grandma approves!",
+      "t": 25.13
+    },
+    {
+      "type": "say",
+      "text": "Great warm-up!",
+      "t": 28.391
+    }
+  ],
+  "composer": {
+    "bpm": 92.0,
+    "first_beat": 1.0
+  },
+  "moves": [
+    {
+      "start": 1.652,
+      "end": 6.87,
+      "name": "Slow right arm lift"
+    },
+    {
+      "start": 6.87,
+      "end": 12.087,
+      "name": "Slow left arm lift"
+    },
+    {
+      "start": 12.087,
+      "end": 17.304,
+      "name": "Gentle elbow bend"
+    },
+    {
+      "start": 17.304,
+      "end": 22.522,
+      "name": "Gentle side opening"
+    },
+    {
+      "start": 22.522,
+      "end": 27.739,
+      "name": "Gentle left elbow bend"
+    }
+  ]
+}

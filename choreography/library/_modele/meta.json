@@ -1,0 +1,12 @@
+{
+  "title": "Titre affiche dans le menu",
+  "description": "Une phrase pour l'equipe (sans accents : la console Windows les affiche mal).",
+  "audio": "musique.wav",
+  "sync_offset": 0.0,
+  "countdown": true,
+  "end": null,
+  "events": [
+    {"t": 4.2, "type": "say", "text": "Y!"},
+    {"t": 4.2, "type": "leds", "color": "#FF0000", "duration": 0.1}
+  ]
+}

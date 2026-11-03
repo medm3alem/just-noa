@@ -1,0 +1,11 @@
+{
+  "names": ["LShoulderPitch", "RShoulderPitch"],
+  "times": [
+    [4.2, 5.0],
+    [4.2, 5.0]
+  ],
+  "keys": [
+    [-1.2, 1.4],
+    [-1.2, 1.4]
+  ]
+}
