@@ -331,3 +331,15 @@ For music played by NAO, add the robot path of the file and copy it to the robot
 - Head, torso and legs are not scored for the current choreographies; one player at a time.
 - Player-facing text is English only; operator log lines stay in French.
 - Choregraphe can only run one copy of the bridge per robot (port 8766).
+
+## Physical NAO Connection
+
+The robot IP address can be configured using the --ip argument.
+
+Example:
+
+    python main.py --choregraphe --ip 192.168.2.121 --bridge-port 8766 --ui hmi --video 0
+
+For network setup, IP changes and troubleshooting, see:
+
+[NAO Connection Guide](docs/NAO_CONNECTION.md)
